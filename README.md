@@ -11,7 +11,20 @@ pip install -r requierments.txt
 then run locust and use ui to run test
 
 ```shell
-locust
+locust [userClass]
+```
+
+and user class is one of these:
+    
+* AuthUser 
+* BizUser 
+* GatewayUser
+
+
+we can compile proto files with this command
+
+```shell
+python -m grpc_tools.protoc -I. --python_out=. --pyi_out=. --grpc_python_out=. protos/*.proto --experimental_allow_proto3_optional
 ```
 
 ### results
