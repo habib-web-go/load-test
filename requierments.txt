@@ -1,1 +1,5 @@
 locust==2.15.1
+grpcio==1.54.2
+protobuf==4.23.2
+grpcio-tools==1.54.2
+grpc-interceptor==0.15.2
