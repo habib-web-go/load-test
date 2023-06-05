@@ -153,6 +153,7 @@ class BizUser(GrpcUser):
 
 
 class GatewayUser(HttpUser):
+    host = "http://localhost:6433"
     @task
     def get_users(self):
         data = {
